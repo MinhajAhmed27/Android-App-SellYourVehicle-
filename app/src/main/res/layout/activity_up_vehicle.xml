@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_up"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/imageText_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginRight="134dp"
+            android:gravity="center"
+            android:hint="Tap to take a photo"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Vehicle Type  "
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_car_up"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Car"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_bike_up"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bike"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_gallery_up"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:hint="Add image from gallery"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/make_up"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:hint="Make"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/model_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Model"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/year_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Year"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/km_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Kms Driven"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/price_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Price"
+                android:inputType="textPersonName" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select transmission  "
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_auto_up"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Auto"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_manual_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manual"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_postAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post My Ad" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
